@@ -1,0 +1,226 @@
+.title_letter_space {
+    letter-spacing: 15px;
+}
+
+.sheet_height {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flex_end {
+    justify-content: end;
+}
+
+.font_12 {
+    font-size: 12px;
+}
+
+.font_13 {
+    font-size: 13px;
+}
+
+.font_14 {
+    font-size: 14px;
+}
+
+table,
+td,
+th {
+    border: 1px solid;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.d-flex {
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.margin_parent {
+    padding: 0 3rem;
+    font: 14px;
+}
+
+.font_bold {
+    font-weight: bold;
+}
+
+.green_border {
+    border: 1px solid green;
+    margin: 1rem 0;
+}
+
+.text_center {
+    text-align: center;
+}
+
+
+.padding_bottom {
+    padding-bottom: 5rem;
+}
+
+.padding_bottom_1 {
+    padding-bottom: 1rem;
+}
+
+.padding_1 {
+    padding: .5rem;
+}
+
+.flex_1 {
+    flex: 1;
+}
+
+.padding_top_bottom {
+    padding: 3rem 0;
+}
+
+.page_height {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.note_data {
+    padding: .5rem 3rem;
+    font-size: 13px;
+}
+
+.text_wrap {
+    padding: .5rem 3rem;
+    font-size: 13px;
+}
+
+.padding_3 {
+    padding: .2rem;
+}
+
+.investment_title {
+    border-bottom: 1px solid;
+    font-weight: bold;
+    width: 40%;
+    margin: 1rem 0;
+}
+
+.flex_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment_subtitle {
+    border-bottom: 1px solid;
+    margin: 1rem;
+    width: 40%;
+}
+
+.section_border {
+    border: 1px solid black;
+    padding: 1rem;
+    text-align: justify;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.padding_top_3 {
+    padding-top: 3rem;
+}
+
+.text_justify {
+    text-align: justify;
+}
+
+.padding_top_1 {
+    padding-top: 1rem;
+}
+
+.padding_top_bottom_1 {
+    padding: 1rem 0;
+}
+
+.list_items {
+    display: flex;
+}
+
+.margin_left_auto {
+    margin-left: auto;
+}
+
+.text-with-border {
+    position: relative;
+    display: inline-block;
+}
+
+.text-with-border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    /* Adjust this value for the border thickness */
+    background-color: black;
+    /* Adjust this value for the border color */
+}
+
+.margin_bottom_1 {
+    margin-bottom: 1rem;
+}
+
+.risk_capacity {
+    display: flex;
+    justify-content: space-between;
+}
+
+.border_ {
+    border: 1px solid black;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.padding_left_2 {
+    padding-left: 2rem;
+
+}
+
+.width_part {
+    width: 10%;
+}
+
+.singnature_border {
+    border: 1px solid black;
+    padding: 2rem 4rem;
+}
+
+.pddining_left_7 {
+    padding-left: 4rem;
+}
+
+.padding_bottom_7 {
+    padding-bottom: 7rem;
+}
+
+.padding_1rem {
+    padding: 1rem;
+}
+
+.padding_bottom_2 {
+    padding-bottom: 2rem;
+}
+
+.border_10 {
+    border: 1px solid black;
+    width: 40%;
+}

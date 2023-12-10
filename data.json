@@ -1,0 +1,703 @@
+{
+  "title": "THREE COMMA",
+  "sub_titile": "CAPITAL ADVISORS LTD",
+  "sheet_title": "Applicant Analysis Sheet",
+  "address": "3CCA, Office Number: 20-41, 20th Floor, Central Park Towers, DIFC, PO Box 472401, Dubai, UAE",
+  "Tel": "+971 4 580 7828 / 4 580 7838",
+  "dsfa": "Regulated by Dubai Financial Services Authority (DFSA)",
+  "head_title": "The respective Applicant / Beneficial Owner (“Applicant[s]”) hereby confirms to 3CCA their information, background and financial standing as follows:",
+  "applicants": [
+    {
+      "client_type": "1. Individual",
+      "criteria_a": " Has at least USD 1,000,000.00 in net assets1, and if required by 3CCA, has provided 3CCA with documentary proof to evidence this fact or will have assets under management of at least such amount with 3CCA from the onset of the relationship. AND ",
+      "criteria_b": " Is or has been in the previous two (2) years an employee in a relevant professional position of an Authorised Firm or Regulated Financial Institution OR Appears on reasonable grounds to have sufficient financial experience and understanding of relevant financial markets, products or transactions and any associated risks",
+      "flag": true
+    },
+    {
+      "client_type": "2. Undertaking2",
+      "criteria_a": " Has at least USD 1,000,000.00 as its own funds or as called-up capital, and if required by 3CCA, has provided 3CCA with documentary proof to evidence this fact or will have assets under management of at least such amount with 3CCA from the onset of the relationship. AND ",
+      "criteria_b": " Appears on reasonable grounds to have sufficient financial experience and understanding of relevant financial markets, products or transactions and any associated risks",
+      "flag": true
+    },
+    {
+      "client_type": "3. Personal Investment Vehicle",
+      "criteria_a": " Has at least USD 1,000,000.00 in net assets, and if required by 3CCA, has provided 3CCA with documentary proof to evidence this fact or will have assets under management of at least such amount with 3CCA from the onset of the relationship. AND ",
+      "criteria_b": " Is or has been in the previous two (2) years an employee in a relevant professional position of an Authorised Firm or Regulated Financial Institution OR Appears on reasonable grounds to have sufficient financial experience and understanding of relevant financial markets, products or transactions and any associated risks",
+      "flag": true
+    },
+    {
+      "client_type": "4. Collective Investment Fund/Regulated Pension Fund Investment Vehicle",
+      "criteria": "An arrangement which amounts to a fund under Article 11 of the Collective Investment Law 2010 and which is not excluded under the rules made under Article 21 set out under Collective Investment Rules Section 2.1 or a regulated pension fund"
+    },
+    {
+      "client_type": "5. Authorised Firm/Regulated Financial Institution",
+      "criteria": "Is an authorised firm, regulated financial institution or the management company of a regulated pension fund"
+    },
+    {
+      "client_type": "6. Trustee",
+      "criteria": "Is a trustee of a trust which has, or had during the previous 12 months assets of at least USD 10,000,000.00"
+    },
+    {
+      "client_type": "7. Single Family Office",
+      "criteria": "A holder of a license under the single-family office regulations with respect to its activities carried on exclusively for the purpose of, and only in so far as it is, carrying out its duties as a single-family office"
+    }
+  ],
+  "page_3": {
+    "constituted_data": [
+      {
+        "client_type": "8. Government",
+        "criteria": "Is a properly constituted government, government agency, central bank or other national monetary authority of any country or jurisdiction"
+      },
+      {
+        "client_type": "9. Public Authority",
+        "criteria": "Is a public authority or a state authority"
+      },
+      {
+        "client_type": "10. Supra National Organisation",
+        "criteria": "Is a supranational organisation whose members are either countries, central  banks, or national monetary authorities"
+      },
+      {
+        "client_type": "11. Authorised Market Institution",
+        "criteria": "Is an authorised market institution, regulated exchange, or regulated clearing  house"
+      },
+      {
+        "client_type": "12. Body Corporate",
+        "criteria": "Is a body corporate whose shares are listed or admitted to trading on any regulated exchange of an IOSCO member country"
+      },
+      {
+        "client_type": "13. Large Undertaking",
+        "criteria": "Is a large undertaking and on the date of its most recent financial statements, meets at least two of the following requirements:",
+        "list_1": "It has a balance sheet total3 of at least USD 20,000,000.00",
+        "list_2": "It has a net annual turnover of at least USD 40,000,000.00",
+        "list_3": "It has its own funds4 or called up capital5 of at least USD 2,000,000.00",
+        "flag": true
+      },
+      {
+        "client_type": "14. Other Institutional Investor",
+        "criteria": "Institutional investor whose main activity is to invest in financial instruments  including an entity dedicated to the securitization of assets or other financial  transactions"
+      }
+    ],
+    "note": "Note: Items “2” and “4 to 14” mentioned above may also include a Controller, Holding Company, Subsidiary or Joint Venture Partner6 who meets the criteria to be classified as an “Assessed” or a “Deemed” Professional client  respectively.",
+    "listed_data": [
+      {
+        "point": "Assets which exclude the primary residence of the person and may include any assets held directly or indirectly by that person"
+      },
+      {
+        "point": "Body corporate or partnership or an incorporated association carrying on a trade or business with or without a view to profit"
+      },
+      {
+        "point": "Balance sheet total means the aggregate of the amounts shown as assets in the balance sheet before deducting both current and long-term liabilities"
+      },
+      {
+        "point": "Own funds mean cash and investments shown in the balance sheet"
+      },
+      {
+        "point": "Called up capital means all the amounts paid up or allotted in shares, less any amounts owing on allotted shares"
+      },
+      {
+        "point": "The Joint Venture Partner who is the key decision maker with respect to the business activities of the Joint Venture"
+      }
+    ],
+    "alfa_data": [
+      {
+        "list_point": "I have informed the Applicant / Beneficial Owner (“Applicant[s]”) that Three Comma Capital Advisors Ltd. (“3CCA”) only carries on its services for and with Professional Clients or Market Counterparties and the  relevant consequences relating thereof."
+      },
+      {
+        "list_point": "I have verified the following type with respect to the Applicant / Beneficial Owner:",
+        "list_1": "Assessed Professional, above 1 - 3",
+        "list_2": "Deemed Professional, above 4 - 14",
+        "list_3": "Market Counterparty (to be notified by 3CCA), above 4 - 14.",
+        "flag": true
+      }
+    ]
+  },
+  "page_4": {
+    "investment_title": "Investment Risk Profile Questionnaire",
+    "introduction": [
+      {
+        "list": "Individual/ Joint account – This section must be completed by all account holders based on the collective view of all account holders on Risk Capacity or in case of primary account holder, then form to be filled by primary account holder based on an undertaking from the joint account holder to the primary for decision taking. If all account holders are decision makers, then the Risk Capacity of the account holder with the lowest Risk Capacity."
+      },
+      {
+        "list": "Personal Investment Vehicle – This section may be completed by a person who is authorized to complete the IRPQ based on information of the beneficial owner (beneficial owner is the person or entity that stands to gain the    commercial or economic benefit of the transactions and/or bear their commercial or economic risk). If there is more  than one beneficial owner, the authorized signatory may be guided to complete the IRPQ based on the collective    view of all beneficial owners on Risk Capacity or based on information of the beneficial owner with the lowest Risk Capacity."
+      },
+      {
+        "list": "Other corporate entity or trust – This section may be completed based on the Risk Capacity of the corporate entity or trust."
+      }
+    ],
+    "discription_point_1": "This Investment Risk Profiling Questionnaire is designed to help us in assessing the suitability of investment products for your advisory relationship with Three Comma Capital Advisors Ltd. Any inaccurate, outdated, or incomplete information  provided may affect our assessment and as a result, the quality of our services provided to you. For regulatory purposes   and to ensure that we continue to provide services to you based on your most current information, we will review the  information provided to us in this document periodically. Please inform us immediately if there are any material changes  to any of the information that you have provided to us in this Questionnaire.",
+    "discription_point_2": "Accordingly, each Applicant/ Beneficial owner/ Authorized Person hereby agrees with all the information provided in this Investment Risk Profiling Questionnaire and confirms that it is true and accurate in respect of each of them.  Please note that this document does not constitute any offer, invitation, solicitation, comment or any guarantee to the purchase or sale of any product or services of Three Comma Capital Advisors Ltd.",
+    "risk_capacity_discription": "Risk Capacity is your ability to cope with financial losses without a noticeable effect on your standard of living or course of business. The following questions intend to assess your capacity to take risks on your portfolio under the relationship with Three Comma Capital Advisors Ltd."
+  },
+  "page_5": {
+    "investment_Horizon": {
+      "title": "Investment Time Horizon",
+      "question": "What is your estimated investment time horizon in respect of your investments, when will you need substantial funds from your investments?",
+      "options": [
+        {
+          "listoption": "a. Less than 1 year",
+          "answer": "(0)"
+        },
+        {
+          "listoption": "b. Less than 5 years",
+          "answer": "(2)"
+        },
+        {
+          "listoption": "c. More than 5 years and up to 10 years",
+          "answer": "(4)"
+        },
+        {
+          "listoption": "d. More than 10 years or I/we have no time constraints",
+          "answer": "(6)"
+        }
+      ],
+      "note": " Investment time horizon refers to the length of time one expects to hold one’s portfolio invested, without needing the money for other purposes. With a longer time horizon, one can generally afford to invest in instruments which have a higher risk rating, as there  will be a long timeline to ride out volatility. Age of the client and the stage of financial life cycle should be taken into consideration while determining the investment horizon e.g., an investor in growth stage of financial cycle who is still 20 to 30 years out from retirement  can have a longer investment horizon and therefore afford to invest more aggressively. A long-time horizon does not prevent having   tactical positions being held for shorter time and does not mean that each of your investments need to be held for a period matching your horizon. A short time horizon does not prevent you from holding products with longer tenor that have sufficient liquidity which would allow you to exit the positions before maturity with ease. Do note that there may be periods within your time horizon during which your portfolio may underperform or outperform compared to your objectives."
+    },
+    "liquidity": {
+      "title": "Liquidity",
+      "question": "What percentage of your total net worth are liquid investable assets?",
+      "options": [
+        {
+          "listoption": "a. Less than 25%",
+          "answer": "(0)"
+        },
+        {
+          "listoption": "b. Between 25% and 50%",
+          "answer": "(2)"
+        },
+        {
+          "listoption": "c. Between 51% and 75%",
+          "answer": "(4)"
+        },
+        {
+          "listoption": "d. More than 75%",
+          "answer": "(6)"
+        }
+      ],
+      "note": "Note: Liquid investible assets refer to assets such as cash, deposits, bonds, shares, mutual funds, structured notes, insurance policies with cash surrender value that can be surrendered at any time, or assets which can be liquidated within 3 months under normal conditions."
+    },
+    "free_asset_ratio": {
+      "title": "Free Asset Ratio",
+      "question": "What proportion of your total financial assets is available to invest and therefore not required to cover foreseeable liabilities or specific plans?",
+      "options": [
+        {
+          "listoption": "a. Less than 25%",
+          "answer": "(0)"
+        },
+        {
+          "listoption": "b. Between 25% and 50%",
+          "answer": "(2)"
+        },
+        {
+          "listoption": "c. Between 51% and 75%",
+          "answer": "(4)"
+        },
+        {
+          "listoption": "d. More than 75%",
+          "answer": "(6)"
+        }
+      ]
+    },
+    "stability_of_income": {
+      "title": "Stability of Income",
+      "question": "Given the investment time horizon chosen, how stable is your income? (Excluding income from financial assets)",
+      "options": [
+        {
+          "listoption": "a. No or insignificant net income",
+          "answer": "(0)"
+        },
+        {
+          "listoption": "b. Not Stable: My net income may fluctuate significantly",
+          "answer": "(2)"
+        },
+        {
+          "listoption": "c. Mostly Stable: My net income is positive despite moderate fluctuation",
+          "answer": "(4)"
+        },
+        {
+          "listoption": "d. Very Stable: My net income is positive with little to no fluctuation",
+          "answer": "(6)"
+        }
+      ],
+      "note": "If income not derived from your portfolio (e.g., salary, rent, and pension annuities) is at risk, you might need to rely on income from your portfolio or even your capital to cover temporary deficits arising from your account. Therefore, you should take additional care with your investments."
+    }
+  },
+  "page_6": {
+    "risk_appetite_discription": "Risk Appetite is your comfort level in taking investment risks in the portfolio. The following questions intend to assess your comfort in taking risks on your portfolio under the advisory relationship with Three Comma Capital Advisors Ltd.",
+    "investment_objectives": {
+      "title": "Investment Objective",
+      "question": "The investment objectives described below reflect different reasons why people choose to invest. Which answer best describes your investment objective?",
+      "options": [
+        {
+          "listoption": "a. Capital preservation-A preference for preservation of invested capital with returns in line with short- term money market rates",
+          "answer": "(0)"
+        },
+        {
+          "listoption": "b. Conservative -A preference for capital stability and generation of returns slightly above short-term money market rate",
+          "answer": "(1)"
+        },
+        {
+          "listoption": "c. Balanced- A preference for investments or investment strategies that aim to provide a balance of  income and capital appreciation",
+          "answer": "(2)"
+        },
+        {
+          "listoption": "d. Growth- A preference for investments or investment strategies that typically aim to provide capital appreciation through active use of market opportunities, expected return above average",
+          "answer": "(3)"
+        },
+        {
+          "listoption": "e. Aggressive Growth - A preference for investments or investment strategies that seek exclusively to  provide high capital appreciation over time by using all market opportunities",
+          "answer": "(4)"
+        }
+      ]
+    },
+    "experience_in_risky_assets": {
+      "title": "Experience in Risky Assets",
+      "question": "How many years of experience do you have with risk-bearing investments such as equities, derivatives and  alternative investments?",
+      "options": [
+        {
+          "listoption": "a. None",
+          "answer": "(0)"
+        },
+        {
+          "listoption": "b. Less than 3 years",
+          "answer": "(1)"
+        },
+        {
+          "listoption": "c. More than 3 and less than 6 years",
+          "answer": "(2)"
+        },
+        {
+          "listoption": "d. Between 6 years and 15 years",
+          "answer": "(3)"
+        },
+        {
+          "listoption": "e. More than 15 years",
+          "answer": "(4)"
+        }
+      ]
+    },
+    "Expectations_from_the_Investment_Portfolio": {
+      "title": "Expectations from the Investment Portfolio",
+      "question": "Do you believe over long-term (more than 5 years) riskier products with a higher potential return (e.g., equities) are more attractive than less risky products with a potential return (e.g., money market)?",
+      "options": [
+        {
+          "listoption": "a. I do not agree",
+          "answer": "(0)"
+        },
+        {
+          "listoption": "b. I do not fully agree",
+          "answer": "(1)"
+        },
+        {
+          "listoption": "c. I partially agree",
+          "answer": "(2)"
+        },
+        {
+          "listoption": "d. I generally agree",
+          "answer": "(3)"
+        },
+        {
+          "listoption": "e. I agree",
+          "answer": "(4)"
+        }
+      ]
+    }
+  },
+  "page_7": {
+    "title": "4. Perception of Risk, Capital Loss and Market fluctuation",
+    "scenarios": [
+      {
+        "traget_annual": "Target annual return over the long run",
+        "scenario_a": "Risk Free  rate (RF)",
+        "scenario_b": "RF + (1%)",
+        "scenario_c": "RF + (2%-3%)",
+        "scenario_d": "RF+ (4%-5%)",
+        "scenario_e": "RF +( ≥5%)"
+      },
+      {
+        "traget_annual": "Range of annual returns^ under normal market  circumstances",
+        "scenario_a": "-3% to 6%",
+        "scenario_b": "-6% to 11%",
+        "scenario_c": "-14% to 23%",
+        "scenario_d": "-23% to 36%",
+        "scenario_e": "-39% to 58%"
+      },
+      {
+        "traget_annual": "",
+        "scenario_a": "(0)",
+        "scenario_b": "(1)",
+        "scenario_c": "(2)",
+        "scenario_d": "(3)",
+        "scenario_e": "(4)"
+      }
+    ],
+    "note": "Please bear in mind that the opportunity to make higher returns typically requires a higher ability and willingness to  assume a greater amount of risk, which in turn increases the possibility of losses. It is therefore important to consider the  returns that you wish to achieve considering the risks you are prepared to take.",
+    "note_1": "^ In the situation where highly unfavourable market circumstances occur (e.g., a financial crisis, covid), the potential loss in each of the scenarios described could be worse than the figures indicated above, including a decline of up to 100%.",
+    "sub_title": "* Scenarios C, D and E are expected to use leverage in investment",
+    "loss_sensitivity": {
+      "title": "Loss Sensitivity",
+      "question": "How would you react if your portfolio were to decrease by 30%?",
+      "options": [
+        {
+          "listoption": "a. Reduce all or most of existing investment positions",
+          "answer": "(0)"
+        },
+        {
+          "listoption": " b. Reduce some investment positions",
+          "answer": "(1)"
+        },
+        {
+          "listoption": "c. Maintain current positions",
+          "answer": "(2)"
+        },
+        {
+          "listoption": "d. Increase some investment positions",
+          "answer": "(3)"
+        },
+        {
+          "listoption": "e. Increase all or most of existing investment positions",
+          "answer": "(4)"
+        }
+      ]
+    },
+    "investment_experience_in_leverage": {
+      "title": "Investment Experience in Leverage",
+      "question": "Do you have experience of using leverage with investments? Do you intend to use leverage when investing?",
+      "options": [
+        {
+          "listoption": "a. No, I do not have experience using leverage, I do not intend to use leverage when investing",
+          "answer": "(0)"
+        },
+        {
+          "listoption": "b. No, I do not have experience using leverage, but I do intend to use leverage in the future",
+          "answer": "(2)"
+        },
+        {
+          "listoption": "c. Yes, I have experience with leverage, but not intend to use leverage when investing in the future",
+          "answer": "(4)"
+        },
+        {
+          "listoption": "d. Yes, I have experience using leverage, and I intend to use leverage when investing in the future",
+          "answer": "(6)"
+        }
+      ]
+    }
+  },
+  "page_8": {
+    "important_notice": {
+      "title": "Important Notice for customers who intend to use Leverage against the Portfolio",
+      "discription_1": "Leveraging a portfolio significantly increases its risk profile. The degree of the increase in risk level will depend on the amount of borrowing in comparison to the assets in your portfolio. As a result of this magnification effect, using leverage for investment purposes carries a greater risk of loss than purchasing investments with cash and may also lead to losses that substantially exceed the original capital invested. Therefore, using leverage is not suitable for customers who cannot bear higher risk. Other factors such as liquidity and volatility of your investments should also be considered, as leveraging investments that are illiquid and volatile could lead to significantly higher losses.",
+      "discription_2": "Leverage investments are subject to market risk, if markets fall significantly, then financial institutions (leverage  providers) may forcefully liquidate the investment. We would like to draw your attention to the risks of leverage as  described in the general risk disclosure statement provided to you. Please also note that the granting of any leverage is  subject to the discretion of the custodian bank and hence may be reduced or withdrawn at any point in time at the sole  discretion of the Custodian Bank.",
+      "margin_call": "Leverage investments are subject to margin calls from the leverage provider to continue the loan at agreed  levels. Mark-to-market calculations are done daily to ask for additional funds from the investor who has availed a loan  if the value of the underlying investment drops below the margin call trigger level. In such a scenario, the leverage provider will ask the investor to bring in additional funds or collateral as per leverage terms. If the investor does not get additional funds or collateral as per margin call notice, the leverage provider reserves the right to liquidate the underlying collateral and recover the loan which may result in full or partial loss of investment for the investor."
+    }
+  },
+  "page_9": {
+    "title": "D. Investment Product Knowledge and Experience",
+    "discription": "List the length of time active in financial markets, and Institution and markets in which the Applicant / Beneficial Owner / Authorized Person has invested. Provide documentary evidence to support – for example trade confirmations or Investment/portfolio statements.",
+    "category_table": [
+      {
+        "list_alfa": "a",
+        "list_1": "Deposits (including Foreign Currency Deposits)",
+        "list_2": "Money Market Funds",
+        "list_3": "Foreign Exchange (e.g., Spot)"
+      },
+      {
+        "list_alfa": "b",
+        "list_1": "Short Term debt instruments  (e.g., Commercial paper, Certificate of Deposits,  Treasury/ Government Bills)",
+        "list_2": "Plain Vanilla Investment Grade Bonds",
+        "list_3": "Investment Grade Bond Funds/Exchange Traded Funds"
+      },
+      {
+        "list_alfa": "c",
+        "list_1": "Equity Funds, Multi-asset  Funds, High-yield Bond  Funds/ Exchange Traded  Funds",
+        "list_2": "Precious Metals/  Commodities",
+        "list_3": "Structured Products: Capital protection",
+        "list_4": "Forwards/Warrants/ Swaps (currency and Interest Rate)",
+        "flag": true
+      }
+    ]
+  },
+  "page_10": {
+    "category_table": [
+      {
+        "list_alfa": "d",
+        "list_1": "Plain Vanilla Options (e.g.,  call, put options)",
+        "list_2": "Dual Currency Investments",
+        "list_3": "Structured Notes: Yield    enhancement)",
+        "list_4": "Non-investment Grade Bonds (e.g., High-Yield Bonds)",
+        "list_5": "Bonds with Special Features(e.g., Subordinated/   Perpetual/Contingent Convertible Bonds)",
+        "list_6": "Investment Grade Bond Funds/Exchange Traded Funds"
+      },
+      {
+        "list_alfa": "e",
+        "list_1": "Structured Notes  (Participation Notes/ Bonus Notes)",
+        "list_2": "Private Equity Funds",
+        "list_3": "Hedge Funds",
+        "list_4": "REITs",
+        "list_5": "Accumulators & Decumulators (e.g., Equity, FX)",
+        "list_6": "Exotic Options (e.g., Options with knock-in / knock-out  feature)"
+      }
+    ]
+  },
+  "page_11": {
+    "questions": [
+      {
+        "question": "A. Provide details of the Applicant’s / Beneficial Owner / Authorized person’s relevant educational  background:"
+      },
+      {
+        "question": "B .Provide details of the Applicant’s / Beneficial Owner / Authorized person’s employment experience:"
+      },
+      {
+        "question": "C. Provide other details of the Applicant’s / Beneficial Owner / Authorized person’s experience (markets, banks/institutions etc.):"
+      },
+      {
+        "question": "D. Provide details of the Applicant’s / Beneficial Owner / Authorized person’s experience in products prior  to 3yrs (e.g., years of experience, no of transactions, markets, banks/institutions etc.):"
+      },
+      {
+        "question": "E. Provide details of the Applicant’s / Beneficial Owner / Authorized person’s experience in leverage together with details and examples:"
+      }
+    ]
+  },
+  "page_12": {
+    "title": "I am satisfied from above analysis that the Applicant’s / Beneficial Owner / Authorized person:",
+    "list_items": [
+      {
+        "list": "Has the necessary experience and understanding pertaining to financial markets, financial products and / or transactions and any associated risks."
+      },
+      {
+        "list": "Has been active in the relevant financial markets and has participated in dealings with sufficient   frequency to have adequate knowledge and experience of the financial markets and financial products."
+      },
+      {
+        "list": "Has participated in various transactions undertaken in relevant financial markets over the past years; and"
+      },
+      {
+        "list": "Has a sizable financial portfolio"
+      }
+    ],
+    "subtitle": "Accordingly, in my opinion, the Applicant / Beneficial Owner / Authorized person meets the criteria of a Professional Client as specified in the DFSA Conduct of Business Model."
+  },
+  "page_13": {
+    "title": "A. Investment Profile derived from your answers.",
+    "list_items": [
+      {
+        "list_1": "Investment Objectives",
+        "list_2": "Aim to preserve capital.",
+        "list_3": "Aim to achieve returns slightly above the short-term money market rate. Capital Stability.",
+        "list_4": "Aim to provide a balance of income and capital appreciation.",
+        "list_5": "Aim to achieve capital appreciation through active use of market opportunities, expected return above average.",
+        "list_6": "Aim to achieve high capital appreciation over time by using all market opportunities."
+      },
+      {
+        "list__1": "Potential Risk",
+        "list_2": "You want to minimize the risk of loss, with potentially limited return.",
+        "list_3": "You are prepared to face a low to medium level of fluctuation and risk with your invested capital over the short to medium term.",
+        "list_4": "You are prepared to face a medium level of fluctuation and volatility. Moderate risk to principal and return over the medium term.",
+        "list_5": "You are prepared to face a higher level of fluctuation and risk with your invested capital over the medium to long term.",
+        "list_6": "You are prepared to accept a significant level of fluctuation and volatility with significant risk to principal and expected return."
+      },
+      {
+        "list_1": "Product Characteristics",
+        "list_2": "Portfolios tend to be invested conservatively in short term, high credit quality and highly liquid investments e.g., cash, deposits, and money market securities/funds.",
+        "list_3": "Products have foreseeable returns and low sensitivity to market risk. Low risk exposure to interest rates, credit spreads, and other risk factors. E.g. US treasury bills, short tenor plain vanilla Investment Grade Bonds, Investment Grade Bond Funds",
+        "list_4": "Products have variability in returns and are sensitive to market risk due to greater exposure to interest rates, credit spreads and other risk factors. E.g., Bond Funds, Multi asset allocation funds, Dual currency investments for major currencies, developed market Equities, equity Funds/ETFs investing in developed markets, capital protected structured Notes.",
+        "list_5": "Products returns have expected to experience extreme variability due to substantial exposure to interest rates, credit spreads and other risk factors. Greater price volatility due to a lower degree of liquidity in the market/ greater sensitivity to changing market scenarios. E.g., High Yield Bonds/ Bond Funds, Bonds with special features such as bail in, perpetual bonds, synthetic ETFs, Fixed Coupon Notes, Preferred Shares, other non-principal protected structured products and margin trade on foreign exchange with the potential for significant loss.",
+        "list_6": "Products expected to have a significant investment risk and very high sensitivity to various market scenarios. Potential for very high returns with exposure to very wide fluctuations in underlying investments over the short, medium, and long term. Investments can fluctuate widely and may fall substantially below the initial invested value; significant or total capital loss can occur. Investment may have infinite downside risk. E.g., Accumulators, Decumulators, Credit Linked Notes, Hedge funds, Private Equity Funds, Margin trades on commodities, Structured Products such as Reverse Convertibles, Memory Coupon Notes, Bonus Enhanced Notes."
+      },
+      {
+        "list_1": "Leverage*",
+        "list_2": "Do not intend to use leverage.*",
+        "list_3": "Do not intend to use leverage.*",
+        "list_4": "Intend to use a low level of leverage (≤ 30% LTV) to enhance returns.",
+        "list_5": "Intend to use high levels of leverage (≥ 50%) to enhance returns.",
+        "list_6": "Intend to use a moderate level of leverage (30%-50% LTV) to enhance returns."
+      }
+    ],
+    "subtitle": "*Although the description includes an indicative list of typical products for the various portfolios illustrated, your portfolio  may include lower and/or higher risk products for diversification and/or hedging purposes."
+  },
+  "page_14": {
+    "title": "B. Confirmation of your Investment Profile",
+    "discription": "Your chosen investment profile is recorded as above. If you wish to choose an Investment Profile with alower risk and return profile that you consider better reflects your risk appetite and investment circumstances, please consult your Relationship Manager. Please note that you can only choose an alternative Profile that is more conservative than indicated in section A above.",
+    "point_1": "☐ I/We hereby acknowledge that the Investment Profile in Section A above is consistent with my/our investment risk tolerance requirements and investment objectives.",
+    "point_2": "☐ The investment profile in Section A above is not consistent with my/our investment risk tolerance requirements and/or investment objective. I/We hereby select an Investment Profile which is:",
+    "table_data": [
+      {
+        "list": "Investment Profile"
+      },
+      {
+        "list": "Capital Preservation ☐"
+      },
+      {
+        "list": "Conservative  ☐"
+      },
+      {
+        "list": "Balanced   ☐"
+      },
+      {
+        "list": "Growth ☐"
+      }
+    ],
+    "question": "Do you want to trade in derivatives and products with embedded derivatives (e.g.,structured products, dual currency investments, plain vanilla options, exotic options, accumulators, swaps/forwards), hedge funds  and /or private equities?",
+    "option_1": "☐ Yes, I/We declare that I/We have received, read, and understood the risks of investing in derivatives and structured products as stated in the General Risk Disclosures.",
+    "option_2": "☐ No"
+  },
+  "page_15": {
+    "question": "By providing the information and details set out in this Investment Risk Profile Questionnaire I/We acknowledge that:",
+
+    "list_items": [
+      {
+        "list": "I/We have understood the details and importance and that my/our responses above are true and correct;"
+      },
+      {
+        "list": "I/We confirm that Three Comma Capital Advisors Limited may rely on information provided by me/us to determine my/our risk profiles and the type of investment products that would be suitable for me/us;"
+      },
+      {
+        "list": "I/We hereby undertake to notify Three Comma Capital Advisors Limited. (“3CCA”) when there are any changes to my/our investment circumstances affecting my/our Investment Profile. I/we understand that Three Comma Capital Advisors Limited (“3CCA”) will continue to rely on information provided in the most recent Investment Risk Profiling Questionnaire on its records until Three Comma Capital Advisors Limited (“3CCA”) has received an updated version from me/us;"
+      },
+      {
+        "list": "I/We confirm that the answers to this Investment Risk Profiling Questionnaire have been provided according to the instructions for completion and that the answers may be relied on by Three Comma Capital Advisors Limited. (“3CCA”) in assessing the suitability of investment products for the advisory relationship, notwithstanding that other account holders/authorized persons/ beneficial owners may individually have different investment knowledge and experience, risk capacity, risk tolerance, financial situation, and investment objectives."
+      },
+      {
+        "list": "I/We have also read, understood, and agreed with all the details including the Important Notice stated in this Investment Risk Profile Questionnaire."
+      },
+      {
+        "list": "I/We agree to the Final Investment Risk Profile and confirm that the same is correct in describing my/ our risk capacity, investment knowledge & and experience, financial situation, and investment objectives in relation to the advisory and/or asset management relationship with Three Comma Capital Advisors Limited."
+      },
+      {
+        "list": "I/We understand that any inaccurate or incomplete information that I/we provide or have provided may affect Three Comma Capital Advisors Limited. (“3CCA”) suitability assessment of the investment products and services to be offered to me/us."
+      }
+    ]
+  },
+  "page_16": {
+    "investment_profile_definition": {
+      "title": "Product Risk Matching",
+      "discription": "Three Comma Capital Advisors Ltd. (“3CCA”) uses a framework to support its Relationship Managers in   recommending products to you. The products are classified into 5 risk rating categories and the table below shows which categories are generally matched for the 5 Investment Profiles.",
+      "match": "Please note that if you wish to invest in products that do not fit in your risk profile for any specific purposes such as diversification/ hedging, it may be considered on an exceptional basis subject to a detailed discussion with your RM to  understand the risks and the impact on your portfolio.",
+        "table": {
+          "headers": [
+            { "rowspan": "2" },
+            { "colspan": "5", "text": "Name" }
+          ],
+          "subheaders": [
+            { "colspan": "1" },
+            { "text": "1" },
+            { "text": "2" },
+            { "text": "3" },
+            { "text": "4" },
+            { "text": "5" }
+          ],
+          "rows": [
+            {
+              "investment_profile": { "rowspan": "5", "text": "Investment Profile" },
+              "data": ["Capital Preservation", "❖", "", "", "", ""]
+            },
+            {
+              "data": ["Conservative", "❖", "❖", "", "", ""]
+            },
+            {
+              "data": ["Balanced", "❖", "❖", "❖", "", ""]
+            },
+            {
+              "data": ["Growth", "❖", "❖", "❖", "❖", ""]
+            },
+            {
+              "data": ["Aggressive", "❖", "❖", "❖", "❖", "❖"]
+            }
+          ]
+        },
+      
+
+      "list_items": [
+        {
+          "list1": "Capital Preservation",
+          "list2": "Aim to preserve capital."
+        },
+        {
+          "list1": "Conservative",
+          "list2": "Aim to achieve returns slightly above short-term money market rate. Capital Stability."
+        },
+        {
+          "list1": "Balanced",
+          "list2": "Aim to provide a balance of income and capital appreciation."
+        },
+        {
+          "list1": "Growth",
+          "list2": "Aim to achieve capital appreciation through active use of market opportunities, expected  return above average."
+        },
+        {
+          "list1": "Aggressive",
+          "list2": "Aim to achieve high capital appreciation over time by using all market opportunities."
+        }
+      ]
+    },
+    "product_risk_rating_definition": {
+      "title": "Product Risk Rating Definition",
+      "discription": "Product Risk Rating is determined based on one or a combination of the following factors:",
+      "table_data": [
+        {
+          "list_1": "Product Risk Rating 1",
+          "list_2": "▪ Very low probability of loss of principal",
+          "list_3": "▪ Very limited mark-to-market volatility",
+          "list_4": "▪ Low product complexity"
+        },
+        {
+          "list_1": "Product Risk Rating 2",
+          "list_2": "▪ Low potential loss of principal",
+          "list_3": "▪ Limited mark-to-market volatility",
+          "list_4": "▪ Low product complexity"
+        },
+        {
+          "list_1": "Product Risk Rating 3",
+          "list_2": "▪ Possible material loss of principal",
+          "list_3": "▪ Moderate mark-to-market volatility",
+          "list_4": "▪ Mostly low product complexity"
+        },
+        {
+          "list_1": "Product Risk Rating 4",
+          "list_2": "▪ Significant risk with up to 100% loss of principal",
+          "list_3": "▪ High mark to market volatility",
+          "list_4": "▪ Moderate product complexity"
+        },
+        {
+          "list_1": "Product Risk Rating 5",
+          "list_2": "▪ Significant risk with up to or more than 100% loss of principal",
+          "list_3": "▪ Extremely high mark to market volatility",
+          "list_4": "▪ High product complexity"
+        }
+      ]
+    }
+  },
+  "page_17": {
+    "discription": "As an illustration, you will find below a list of some products with their corresponding product risk ratings, please note that this is not an exhaustive list of products and the assigned risk ratings may change over time. The  examples are general guidelines only.",
+    "list_items": [
+      {
+        "productive_type": "Fixed Income Instruments",
+        "risk_rating": "1-5",
+        "dependinecies": "Issue rating and tenor"
+      },
+      {
+        "productive_type": "Mutual Funds",
+        "risk_rating": "1-5",
+        "dependinecies": "Underlying asset class and geographic / sector concentration"
+      },
+      {
+        "productive_type": "Equities",
+        "risk_rating": "3-5",
+        "dependinecies": "Classification as per MSCI's global investable market indices and geographic concentration"
+      },
+      {
+        "productive_type": "Structured Notes and Derivatives",
+        "risk_rating": "3-5",
+        "dependinecies": "Issuer rating, underlying obligation, and tenor"
+      },
+      {
+        "productive_type": "Commodities and Forex",
+        "risk_rating": "3-5",
+        "dependinecies": "Geopolitical risk, Macroeconomic Risk"
+      },
+      {
+        "productive_type": "Hedge Funds, Private Equity investments, REITs",
+        "risk_rating": "5",
+        "dependinecies": "NiI"
+      }
+    ]
+  }
+}

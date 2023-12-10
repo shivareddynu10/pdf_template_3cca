@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="margin_parent">
+        {{!-- page 1 --}}
+        <div class="page_height padding_top_bottom ">
+            <div class="flex_1">
+                <div>
+                    {{>headerPartial}}
+                </div>
+                <div class="sheet_height">
+                    <h3>Applicant Analysis Sheet</h3>
+                </div>
+            </div>
+            <div class="flex_end">
+                <div> {{> addressPartial}} </div>
+            </div>
+        </div>
+        {{!-- page 2 --}}
+        <div class="page_height  padding_top_bottom ">
+            <div class="flex_1">
+                <div>
+                    {{>headerPartial}}
+                    <div class="padding_bottom_1">{{head_title}}</div>
+                </div>
+                <div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Client Type</th>
+                                <th>Criteria</th>
+                                <th>Please Mark X</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each applicants as |user|}}
+                            <tr>
+                                <td class="padding_1" rowspan={{calculateRowspan user.flag}}> {{user.client_type}}</td>
+                                {{#if user.flag}}
+                                <td rowspan="3">
+                                    <ol type="a">
+                                        <li class="text_justify padding_1">{{user.criteria_a}}</li>
+                                        <li class="text_justify padding_1">{{user.criteria_b}}</li>
+                                    </ol>
+                                </td>
+                                {{else}}
+                                <td class="padding_1" class="text_justify">{{user.criteria}}</td>
+                                {{/if}}
+                                <td class="padding_1"><input type="checkbox" /></td>
+                            </tr>
+                            {{#if user.flag}}
+                            <tr>
+                                <td class="padding_1"><input type="checkbox" /></td>
+                            </tr>
+                            <tr>
+                                <td class="padding_1"><input type="checkbox" /></td>
+                            </tr>
+                            {{/if}}
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex_end">
+                <div> {{> addressPartial}} </div>
+            </div>
+        </div>
+        {{!-- page 3 --}}
+        <div class="page_height padding_top_bottom">
+            <div class="flex_1">
+                <div>
+                    {{>headerPartial}}
+                </div>
+                <div>
+                    <table class="table">
+                        <thead>
+                            <th>Client Type</th>
+                            <th>Criteria</th>
+                            <th>Please Mark X</th>
+                        </thead>
+                        <tbody>
+                            {{#each page_3.constituted_data as | data |}}
+                            <tr>
+                                <td class="padding_3">{{data.client_type}}</td>
+                                <td class="padding_3 text_justify">{{data.criteria}}
+                                    {{#if data.flag}}
+                                    <ol type="i">
+                                        <li class="text_justify">{{data.list_1}}</li>
+                                        <li class="text_justify">{{data.list_2}}</li>
+                                        <li class="text_justify">{{data.list_3}}</li>
+                                    </ol>
+                                    {{/if}}
+                                </td>
+                                <td class="padding_3"><input type="checkbox" /></td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                    <div class="text_wrap">
+                        <div>{{page_3.note}}</div>
+                        <ol>
+                            {{#each page_3.listed_data as | list |}}
+                            <li>{{list.point}}</li>
+                            {{/each}}
+                        </ol>
+                        <ol type="A">
+                            {{#each page_3.alfa_data as | data |}}
+                            <li>{{data.list_point}}</li>
+                            {{#if data.flag}}
+                            <div><input type="checkbox" /> {{data.list_1}}</div>
+                            <div><input type="checkbox" /> {{data.list_2}}</div>
+                            <div><input type="checkbox" /> {{data.list_3}}</div>
+                            {{/if}}
+                            {{/each}}
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="flex_end">
+                <div> {{> addressPartial}} </div>
+            </div>
+        </div>
+        {{!-- page -4 --}}
+        <div class="page_height padding_top_bottom">
+            <div class="flex_1">
+                <div>
+                    {{>headerPartial}}
+                </div>
+                <div>
+                    <div class="flex_text">
+                        <div class="text_center text-with-border font_bold margin_bottom_1">{{page_4.investment_title}}
+                        </div>
+                    </div>
+                    <div class="text-with-border">Instructions for completion for all sections</div>
+                    <div class="text_wrap">
+                        <ol type="-"></ol>
+                        {{#each page_4.introduction as | point |}}
+                        <li>{{point.list}}</li>
+                        {{/each}}
+                        </ol>
+                    </div>
+                    <div class="padding_top_3">
+                        <div class="font_bold text-with-border margin_bottom_1">Section 1:</div>
+                        <div class="section_border">
+                            <div>{{page_4.discription_point_1}}</div>
+                            <div>{{page_4.discription_point_2}}</div>
+                        </div>
+                    </div>
+                    <div class="font_bold padding_top_3"> A. &nbsp; &nbsp;&nbsp; Risk Capacity Assessment (please tick
+                        one box only)</div>
+                    <div class="padding_top_1 text_wrap">{{page_4.risk_capacity_discription}}</div>
+                </div>
+            </div>
+            <div class="flex_end">
+                <div> {{> addressPartial}} </div>
+            </div>
+        </div>
+
+        {{!-- page -5 --}}
+        <div class=" page_height padding_top_bottom">
+            <div class="flex_1 font_13">
+                <div>
+                    {{>headerPartial}}
+                </div>
+                {{!-- Investment Time Horizon --}}
+                <div>
+                    <div class="text-with-border font_bold">{{page_5.investment_Horizon.title}}</div>
+                    <div>{{page_5.investment_Horizon.question}} </div>
+                    <div class="padding_top_bottom_1">
+                        {{#each page_5.investment_Horizon.options as | list |}}
+                        <div class="list_items ">
+                            <div class="list_items">
+                                <div class=""><input type="checkbox" /> </div>
+                                <div>&nbsp; {{list.listoption}}</div>
+                            </div>
+
+                            <div class="margin_left_auto">{{list.answer}}</div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <p>
+                        <i class="text_justify font_12"><span class="font_bold">Note:</span>
+                            {{page_5.investment_Horizon.note}}
+                        </i>
+                    </p>
+                    {{!-- Liquidity --}}
+                    <div>
+                        <div class="text-with-border font_bold">{{page_5.liquidity.title}}</div>
+                        <div>{{page_5.liquidity.question}} </div>
+                        {{#each page_5.liquidity.options as | list |}}
+                        <div class="list_items ">
+                            <div class="list_items">
+                                <div><input type="checkbox" /> </div>
+                                <div>&nbsp; {{list.listoption}}</div>
+                            </div>
+
+                            <div class="margin_left_auto">{{list.answer}}</div>
+                        </div>
+                        {{/each}}
+                        <p>
+                            <i class="text_justify font_12"><span class="font_bold">Note:</span>
+                                {{page_5.liquidity.note}}
+                            </i>
+                        </p>
+                    </div>
+                    {{!-- Free Asset Ratio --}}
+                    <div class="margin_bottom_1">
+                        <div class="text-with-border font_bold">{{page_5.free_asset_ratio.title}}</div>
+                        <div>{{page_5.free_asset_ratio.question}} </div>
+                        {{#each page_5.free_asset_ratio.options as | list |}}
+                        <div class="list_items ">
+                            <div class="list_items">
+                                <div><input type="checkbox" /> </div>
+                                <div>&nbsp; {{list.listoption}}</div>
+                            </div>
+
+                            <div class="margin_left_auto">{{list.answer}}</div>
+                        </div>
+                        {{/each}}
+
+                    </div>
+                    {{!-- Stability of Income --}}
+                    <div>
+                        <div class="text-with-border font_bold">{{page_5.stability_of_income.title}}</div>
+                        <div>{{page_5.stability_of_income.question}} </div>
+                        <div>
+                            {{#each page_5.stability_of_income.options as | list |}}
+                            <div class="list_items ">
+                                <div class="list_items">
+                                    <div><input type="checkbox" /> </div>
+                                    <div>&nbsp; {{list.listoption}}</div>
+                                </div>
+
+                                <div class="margin_left_auto">{{list.answer}}</div>
+                            </div>
+                            {{/each}}
+                        </div>
+
+                        <p class="text_justify font_12 italic padding_top_1"><span class="font_bold">Note:</span>
+                            {{page_5.stability_of_income.note}}
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex_end">
+                <div> {{> addressPartial}} </div>
+            </div>
+        </div>
+
+
+        {{!-- page -6 --}}
+        <div class=" page_height padding_top_bottom">
+            <div class="flex_1">
+                <div>
+                    {{>headerPartial}}
+                </div>
+                <div class="font_13">
+                    <div class="border_">
+                        <div class="font_bold padding_1">Your overall Risk Capacity is:</div>
+                        <div class="risk_capacity font_bold">
+                            <div><input type="checkbox" /> Very Low </div>
+                            <div><input type="checkbox" /> Low </div>
+                            <div><input type="checkbox" /> Average</div>
+                            <div><input type="checkbox" /> High </div>
+                            <div><input type="checkbox" /> Very High </div>
+                        </div>
+                        <div class="risk_capacity font_bold">
+                            <div class="padding_left_2">(0-4) </div>
+                            <div class="padding_left_2">(5-9)</div>
+                            <div class="padding_left_2">(10-14)</div>
+                            <div>(15-19)</div>
+                            <div>(20-24) </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font_bold">B. Risk Appetite Assessment (please tick one box only)</div>
+                        <div class="padding_top_bottom_1">{{page_6.risk_appetite_discription}}</div>
+
+                        {{!-- Investment Objective --}}
+                        <div class="margin_bottom_1">
+                            <div class="text-with-border font_bold">{{page_6.investment_objectives.title}}</div>
+                            <div class="padding_bottom_1">{{page_6.investment_objectives.question}} </div>
+                            {{#each page_6.investment_objectives.options as | list |}}
+                            <div class="list_items ">
+                                <div class="list_items">
+                                    <div><input type="checkbox" /> </div>
+                                    <div>&nbsp; {{list.listoption}}</div>
+                                </div>
+
+                                <div class="margin_left_auto">{{list.answer}}</div>
+                            </div>
+                            {{/each}}
+
+                        </div>
+                        {{!-- Experience in Risky Assets --}}
+                        <div class="margin_bottom_1">
+                            <div class="text-with-border font_bold">{{page_6.experience_in_risky_assets.title}}</div>
+                            <div class="padding_bottom_1">{{page_6.experience_in_risky_assets.question}} </div>
+                            {{#each page_6.experience_in_risky_assets.options as | list |}}
+                            <div class="list_items ">
+                                <div class="list_items">
+                                    <div><input type="checkbox" /> </div>
+                                    <div>&nbsp; {{list.listoption}}</div>
+                                </div>
+
+                                <div class="margin_left_auto">{{list.answer}}</div>
+                            </div>
+                            {{/each}}
+
+                        </div>
+                        {{!-- Expectations from the Investment Portfolio --}}
+                        <div class="margin_bottom_1">
+                            <div class="text-with-border font_bold">
+                                {{page_6.Expectations_from_the_Investment_Portfolio.title}}</div>
+                            <div class="padding_bottom_1">{{page_6.Expectations_from_the_Investment_Portfolio.question}}
+                            </div>
+                            {{#each page_6.Expectations_from_the_Investment_Portfolio.options as | list |}}
+                            <div class="list_items ">
+                                <div class="list_items">
+                                    <div><input type="checkbox" /> </div>
+                                    <div>&nbsp; {{list.listoption}}</div>
+                                </div>
+
+                                <div class="margin_left_auto">{{list.answer}}</div>
+                            </div>
+                            {{/each}}
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex_end">
+                <div> {{> addressPartial}} </div>
+            </div>
+        </div>
+
+        {{!-- page -7 --}}
+        <div class=" page_height padding_top_bottom">
+            <div class="flex_1">
+                <div>
+                    {{>headerPartial}}
+                </div>
+                <div class="font_13">
+                    <div class="text-with-border font_bold padding_3">{{page_7.title}}</div>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <th></th>
+                                <th>Scenario A ☐</th>
+                                <th>Scenario B ☐</th>
+                                <th>Scenario C* ☐</th>
+                                <th>Scenario D* ☐</th>
+                                <th>Scenario E* ☐</th>
+                            </thead>
+                            <tbody>
+                                {{#each page_7.scenarios as | list |}}
+                                <tr>
+                                    <td>{{list.traget_annual}}</td>
+                                    <td>{{list.scenario_a}}</td>
+                                    <td>{{list.scenario_b}}</td>
+                                    <td>{{list.scenario_c}}</td>
+                                    <td>{{list.scenario_d}}</td>
+                                    <td>{{list.scenario_e}}</td>
+                                </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>{{page_7.note}}</p>
+                    <p>{{page_7.note_1}}</p>
+                    <p class="font_bold">{{page_7.sub_title}}</p>
+
+                    {{!-- 5. Loss Sensitivity --}}
+
+                    <div class="margin_bottom_1">
+                        <div class="text-with-border font_bold">
+                            {{page_7.loss_sensitivity.title}}</div>
+                        <div class="padding_bottom_1">{{page_7.loss_sensitivity.question}}
+                        </div>
+                        {{#each page_7.loss_sensitivity.options as | list |}}
+                        <div class="list_items ">
+                            <div class="list_items">
+                                <div><input type="checkbox" /> </div>
+                                <div>&nbsp; {{list.listoption}}</div>
+                            </div>
+
+                            <div class="margin_left_auto">{{list.answer}}</div>
+                        </div>
+                        {{/each}}
+
+                    </div>
+                    {{!-- 6. Investment Experience in Leverage --}}
+
+                    <div class="margin_bottom_1">
+                        <div class="text-with-border font_bold">
+                            {{page_7.investment_experience_in_leverage.title}}</div>
+                        <div class="padding_bottom_1">{{page_7.investment_experience_in_leverage.question}}
+                        </div>
+                        {{#each page_7.investment_experience_in_leverage.options as | list |}}
+                        <div class="list_items ">
+                            <div class="list_items">
+                                <div><input type="checkbox" /> </div>
+                                <div>&nbsp; {{list.listoption}}</div>
+                            </div>
+
+                            <div class="margin_left_auto">{{list.answer}}</div>
+                        </div>
+                        {{/each}}
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex_end">
+                <div> {{> addressPartial}} </div>
+            </div>
+        </div>
+
+        {{!-- page -8 --}}
+        <div class=" page_height padding_top_bottom">
+            <div class="flex_1">
+                <div>
+                    {{>headerPartial}}
+                </div>
+                <div class="font_13">
+                    <div class="font_bold padding_1">{{page_8.important_notice.title}}</div>
+                    <p class="text_justify italic">{{page_8.important_notice.discription_1}}</p>
+                    <p class="text_justify italic">{{page_8.important_notice.discription_2}}</p>
+                    <p class="text_justify italic"><span class="font_bold">Margin Call:</span>
+                        {{page_8.important_notice.margin_call}}</p>
+
+                    <div class="border_">
+                        <div class="font_bold padding_1">Your overall Risk Appetite is:</div>
+                        <div class="risk_capacity font_bold">
+                            <div><input type="checkbox" /> Very Low </div>
+                            <div><input type="checkbox" /> Low </div>
+                            <div><input type="checkbox" /> Average</div>
+                            <div><input type="checkbox" /> High </div>
+                            <div><input type="checkbox" /> Very High </div>
+                        </div>
+                        <div class="risk_capacity">
+                            <div class="padding_left_2">(0-4) </div>
+                            <div class="padding_left_2">(5-9)</div>
+                            <div class="padding_left_2">(10-14)</div>
+                            <div>(15-19)</div>
+                            <div>(20-24) </div>
+                        </div>
+                    </div>
+                    <p class="font_bold">C. Overall Risk Tolerance Assessment (please tick one box only)</p>
+
+                    <div class="border_">
+                        <div class="font_bold padding_1">Your overall Risk Tolerance is (Lower of the Risk Capacity/
+                            Risk
+                            Appetite):</div>
+                        <div class="risk_capacity font_bold">
+                            <div><input type="checkbox" /> Very Low </div>
+                            <div><input type="checkbox" /> Low </div>
+                            <div><input type="checkbox" /> Average</div>
+                            <div><input type="checkbox" /> High </div>
+                            <div><input type="checkbox" /> Very High </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex_end">
+                <div> {{> addressPartial}} </div>
+            </div>
+        </div>
+
+        {{!-- page -9 --}}
+
+        <div class=" page_height padding_top_bottom">
+            <div class="flex_1">
+                <div>
+                    {{>headerPartial}}
+                </div>
+                <div>
+                    <p class="font_bold">{{page_9.title}}</p>
+                    <p class="italic padding_1"> {{page_9.discription}} </p>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Product</th>
+                                    <th>Knowledge(e.g.,relevant work experience/ education/ investment experience)</th>
+                                    <th colspan="3">Experience (Have executed in past 3 years with any financial
+                                        institution, please
+                                        provide other details in section G)</th>
+                                    <th class="width_part"></th>
+                                    <th>prior to3years (Please provide details in section H)</th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Yes &nbsp; No</th>
+                                    <th class="width_part">Yes &nbsp; No</th>
+                                    <th>Average Transaction Size</th>
+                                    <th>Frequency of Transaction</th>
+                                    <th></th>
+                                    <th>Yes &nbsp; No</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#each page_9.category_table as |list index|}}
+                                <tr>
+                                    <td class="text_center padding_3">
+                                        {{list.list_alfa}}
+                                    </td>
+                                    <td class="text_center padding_3">{{list.list_1}}</td>
+                                    <td class="text_center padding_3"><input type="checkbox" /> &nbsp; <input
+                                            type="checkbox" />
+                                    </td>
+                                    <td class="text_center padding_3"><input type="checkbox" /> &nbsp; <input
+                                            type="checkbox" />
+                                    </td>
+                                    <td class="text_center padding_3">[</td>
+                                    <td class="text_center padding_3">|</td>
+                                    <td class="text_center padding_3"></td>
+                                    <td class="text_center padding_3"><input type="checkbox" /></td>
+                                </tr>
+                                <tr>
+                                    <td class="text_center padding_3">
+                                        {{list.list_alfa}}
+                                    </td>
+                                    <td class="text_center padding_3">{{list.list_2}}</td>
+                                    <td class="text_center padding_3"><input type="checkbox" /> &nbsp; <input
+                                            type="checkbox" />
+                                    </td>
+                                    <td class="text_center padding_3"><input type="checkbox" /> &nbsp; <input
+                                            type="checkbox" />
+                                    </td>
+                                    <td class="text_center padding_3">[</td>
+                                    <td class="text_center padding_3">|</td>
+                                    <td class="text_center padding_3"></td>
+                                    <td class="text_center padding_3"><input type="checkbox" /></td>
+                                </tr>
+                                <tr>
+                                    <td class="text_center padding_3">
+                                        {{list.list_alfa}}
+                                    </td>
+                                    <td class="text_center padding_3">{{list.list_3}}</td>
+                                    <td class="text_center padding_3"><input type="checkbox" /> &nbsp; <input
+                                            type="checkbox" />
+                                    </td>
+                                    <td class="text_center padding_3"><input type="checkbox" /> &nbsp; <input
+                                            type="checkbox" />
+                                    </td>
+                                    <td class="text_center padding_3">[</td>
+                                    <td class="text_center padding_3">|</td>
+                                    <td class="text_center padding_3"></td>
+                                    <td class="text_center padding_3"><input type="checkbox" /></td>
+                                </tr>
+                                {{/each}}
+                            </tbody>
+
+
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex_end">
+                <div> {{> addressPartial}} </div>
+            </div>
+        </div>
+
+        {{!-- page -10 --}}
+        <div class=" page_height padding_top_bottom">
+            <div class="flex_1">
+                <div>
+                    {{>headerPartial}}
+                </div>
+
+                <div>
+                    <table class="font_14">
+
+                        <tbody>
+                            {{#each page_10.category_table as |list index|}}
+                            <tr class="">
+                                <td class="text_center padding_1">
+                                    {{list.list_alfa}}
+                                </td>
+                                <td class="text_center padding_1 width_part">{{list.list_1}}</td>
+                                <td class="text_center padding_1"><input type="checkbox" /> &nbsp; <input
+                                        type="checkbox" />
+                                </td>
+                                <td class="text_center padding_1"><input type="checkbox" /> &nbsp; <input
+                                        type="checkbox" />
+                                </td>
+                                <td class="text_center padding_1">[</td>
+                                <td class="text_center padding_1">|</td>
+                                <td class="text_center padding_1 width_part"></td>
+                                <td class="text_center padding_1"><input type="checkbox" /></td>
+                            </tr>
+                            <tr>
+                                <td class="text_center padding_1">
+                                    {{list.list_alfa}}
+                                </td>
+                                <td class="text_center padding_1">{{list.list_2}}</td>
+                                <td class="text_center padding_1"><input type="checkbox" /> &nbsp; <input
+                                        type="checkbox" />
+                                </td>
+                                <td class="text_center padding_1"><input type="checkbox" /> &nbsp; <input
+                                        type="checkbox" />
+                                </td>
+                                <td class="text_center padding_1">[</td>
+                                <td class="text_center padding_1">|</td>
+                                <td class="text_center padding_1  width_part"></td>
+                                <td class="text_center padding_1"><input type="checkbox" /></td>
+                            </tr>
+                            <tr>
+                                <td class="text_center padding_1">
+                                    {{list.list_alfa}}
+                                </td>
+                                <td class="text_center padding_1">{{list.list_3}}</td>
+                                <td class="text_center padding_1"><input type="checkbox" /> &nbsp; <input
+                                        type="checkbox" />
+                                </td>
+                                <td class="text_center padding_1"><input type="checkbox" /> &nbsp; <input
+                                        type="checkbox" />
+                                </td>
+                                <td class="text_center padding_1 width_part">[</td>
+                                <td class="text_center padding_1 width_part">|</td>
+                                <td class="text_center padding_1 width_part"></td>
+                                <td class="text_center padding_1"><input type="checkbox" /></td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+
+                    <div class="pddining_left_7 risk_capacity padding_top_3">
+                        <div class="padding_top_3">
+                            |
+                            Name of Applicant / Beneficial Owner /<br />
+                            Authorized Person
+                        </div>
+                        <div>
+                            <div class="singnature_border"> |</div>
+                            <div>Signature of the Applicant / Beneficial Owner / <br /> Authorized Person</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="flex_end">
+                <div> {{> addressPartial}} </div>
+            </div>
+        </div>
+
+        {{!-- page -11 --}}
+        <div class="page_height padding_top_bottom">
+            <div class="flex_1">
+                <div>
+                    {{>headerPartial}}
+                </div>
+                <div class="font_bold text-with-border margin_bottom_1">Client Profile (filled by Relationship Manager):
+                </div>
+                <div>
+                    {{#each page_11.questions as | list |}}
+
+                    <div class="font_bold padding_bottom_7">{{list.question}}</div>
+
+                    {{/each}}
+                </div>
+            </div>
+            <div class="flex_end">
+                <div> {{> addressPartial}} </div>
+            </div>
+        </div>
+
+        {{!-- page -12 --}}
+        <div class="page_height padding_top_bottom">
+            <div class="flex_1">
+                <div class="font_13">
+                    {{>headerPartial}}
+                </div>
+                <div class=" padding_bottom_1">{{page_12.title}}
+                </div>
+                <div>
+                    {{#each page_11.questions as | list |}}
+
+                    <div class="padding_bottom_1">- &nbsp; {{list.question}}</div>
+
+                    {{/each}}
+                </div>
+                <div>{{page_12.subtitle}}</div>
+                <div class=" risk_capacity padding_top_3">
+                    <div>
+                        <p class="padding_top_3">
+                            |
+                            Name of Relationship Manager/<br />
+                        </p>
+                        <p> Place:</p>
+                    </div>
+                    <div>
+                        <div class="singnature_border"> |</div>
+                        <p>Signature of the Relationship Manager</p>
+                        <p>Date:</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex_end">
+                <div> {{> addressPartial}} </div>
+            </div>
+        </div>
+        {{!-- page -13 --}}
+        <div class=" page_height padding_top_bottom">
+            <div class="flex_1">
+                <div>
+                    {{>headerPartial}}
+                </div>
+                <div class="font_14">
+                    <div class="text-with-border font_bold">Section 2: Customer Profiling Acknowledgement:</div>
+                    <div class="font_bold  margin_bottom_1">{{page_13.title}}
+                    </div>
+                    <div>
+                        <table>
+                            <thead>
+                                <th>Investment Profile</th>
+                                <th>Capital Preservation ☐</th>
+                                <th>Conservative ☐</th>
+                                <th>Balanced ☐</th>
+                                <th>Growth ☐</th>
+                                <th>Aggressive ☐</th>
+                            </thead>
+                            <tbody>
+                                {{#each page_13.list_items as | item |}}
+                                <tr>
+                                    <td class="padding_3">{{item.list_1}}</td>
+                                    <td class="padding_3">{{item.list_2}}</td>
+                                    <td class="padding_3">{{item.list_3}}</td>
+                                    <td class="padding_3">{{item.list_4}}</td>
+                                    <td class="padding_3">{{item.list_5}}</td>
+                                    <td class="padding_3">{{item.list_6}}</td>
+                                </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <p class="italic">{{page_13.subtitle}}</p>
+                </div>
+            </div>
+            <div class="flex_end">
+                <div> {{> addressPartial}} </div>
+            </div>
+        </div>
+
+        {{!-- page -14 --}}
+        <div class=" page_height padding_top_bottom">
+            <div class="flex_1">
+                <div>
+                    {{>headerPartial}}
+                </div>
+                <div class="font_13">
+                    <div class="font_bod padding_3">{{page_14.title}}</div>
+                    <p class="font_bod padding_3">{{page_14.discription}}</p>
+                    <p>{{page_14.point_1}}</p>
+                    <p>{{page_14.point_2}}</p>
+
+                    <table>
+
+                        <tbody>
+                            {{#each page_14.table_data as | point|}}
+
+                            <td class="padding_1">{{point.list}}</td>
+
+                            {{/each}}
+                        </tbody>
+                    </table>
+                    <p class="font_bold"> C. Other Information</p>
+                    <p>{{page_14.question}}</p>
+                    <p>{{page_14.option_1}}</p>
+                    <p class="font_bold">{{page_14.option_2}}</p>
+                </div>
+            </div>
+            <div class="flex_end">
+                <div> {{> addressPartial}} </div>
+            </div>
+        </div>
+
+        {{!-- page -15 --}}
+        <div class=" page_height padding_top_bottom">
+            <div class="flex_1">
+                <div>
+                    {{>headerPartial}}
+                </div>
+                <div class="font_13">
+                    <div class="font_bold padding_1">C. Client Acknowledgement</div>
+                    <div>{{page_15.question}}</div>
+                    <ul>
+
+                        {{#each page_15.list_items as | point|}}\
+                        <li>{{point.list}}</li>
+                        {{/each}}
+                    </ul>
+
+                    <div class="risk_capacity padding_1rem">
+                        <div>
+                            <div>Signed for and on behalf of</div>
+                            <div class="font_bold padding_bottom_2">THREE COMMA CAPITAL ADVISORS LTD</div>
+                            <div class="border_10"></div>
+                            <div class="padding_bottom_1">Authorised Signature</div>
+                            <div class="padding_bottom_1">Name</div>
+                            <div class="padding_bottom_1">Place / Date</div>
+                        </div>
+                        <div>
+
+                            <div class="padding_bottom_2">Signed for and on behalf of (Client)</div>
+                            <div class="border_10"></div>
+                            <div class="padding_bottom_1">Authorised Signature</div>
+                            <div class="padding_bottom_1">Name</div>
+                            <div class="padding_bottom_1">Place / Date</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex_end">
+                <div> {{> addressPartial}} </div>
+            </div>
+        </div>
+
+        {{!-- page -16 --}}
+        <div class=" page_height padding_top_bottom">
+            <div class="flex_1">
+                <div>
+                    {{>headerPartial}}
+                </div>
+                <div class="font_13">
+                    <p class="font_bold">Appendix 1</p>
+                    <div>{{page_16.investment_profile_definition.title}}</p>
+                        <div>{{page_16.investment_profile_definition.discription}}</div>
+
+                        <div>
+                            <table>
+                                <tr>
+                                    {{#each page_16.investment_profile_definition.table.headers as |header|}}
+                                    <th {{#if header.rowspan}}rowspan="{{header.rowspan}}" {{/if}}{{#if
+                                        header.colspan}}colspan="{{header.colspan}}" {{/if}}>{{header.text}}</th>
+                                    {{/each}}
+                                </tr>
+                                <tr>
+                                    {{#each page_16.investment_profile_definition.table.subheaders as |subheader|}}
+                                    <th {{#if subheader.colspan}}colspan="{{subheader.colspan}}" {{/if}}>
+                                        {{subheader.text}}</th>
+                                    {{/each}}
+                                </tr>
+                                {{#each page_16.investment_profile_definition.table.rows as |row|}}
+                                <tr>
+                                    <td {{#if
+                                        row.investment_profile.rowspan}}rowspan="{{row.investment_profile.rowspan}}"
+                                        {{/if}}>{{row.investment_profile.text}}</td>
+                                    {{#each row.data as |cell|}}
+                                    <td>{{cell}}</td>
+                                    {{/each}}
+                                </tr>
+                                {{/each}}
+                            </table>
+
+
+                        </div>
+                        <p class="font_bold">❖ Match</p>
+
+                        <div>{{page_16.investment_profile_definition.match}}</div>
+                        {{!-- Investment Profile Definition --}}
+                        <p class="font_bold text-with-border">Investment Profile Definition</p>
+                        <table>
+                            <tbody>
+                                {{#each page_16.investment_profile_definition.list_items as | point |}}
+                                <tr>
+                                    <td class="text_center">{{point.list1}}</td>
+                                    <td class="text_center">{{point.list2}}</td>
+                                </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+
+                        {{!-- Product Risk Rating Definition --}}
+                        <p class="font_bold text-with-border">{{page_16.product_risk_rating_definition.title}}</p>
+                        <p>{{page_16.product_risk_rating_definition.discription}}</p>
+                        <table>
+                            <tbody>
+                                {{#each page_16.product_risk_rating_definition.table_data as | point |}}
+                                <tr>
+                                    <td class="text_center">{{point.list_1}}</td>
+                                    <td>
+                                        <div>{{point.list_2}}</div>
+                                        <div>{{point.list_3}}</div>
+                                        <div>{{point.list_4}}</div>
+                                    </td>
+                                </tr>
+
+                                {{/each}}
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="flex_end">
+                    <div> {{> addressPartial}} </div>
+                </div>
+            </div>
+
+            {{!-- page -17 --}}
+            <div class=" page_height padding_top_bottom">
+                <div class="flex_1">
+                    <div>
+                        {{>headerPartial}}
+                    </div>
+                    <div>
+                        <p class="font_bold">Idiscription</p>
+                        <p class="padding_1">{{page_17.discription}}</p>
+                        <table>
+                            <thead>
+                                <th>Common Product Types</th>
+                                <th>Product Risk Rating</th>
+                                <th>Dependencies</th>
+                            </thead>
+                            <tbody>
+                                {{#each page_17.list_items as | data|}}
+                                <tr>
+                                    <td class="padding_1 text_center">{{data.productive_type}}</td>
+                                    <td class="padding_1 text_center">{{data.risk_rating}}</td>
+                                    <td class="padding_1 text_center">{{data.dependinecies}}</td>
+                                </tr>
+                                {{/each}}
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+
+                </div>
+                <div class="flex_end">
+                    <div> {{> addressPartial}} </div>
+                </div>
+            </div>
+
+        </div>
+
+
+</body>
+
+</html>
